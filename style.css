@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Round', cursive, Arial, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-kerning: auto;
+  }
+
+  canvas {
+    display: block;
+    z-index: -1;
+    position: relative;
+  }
+
+  .main {
+    opacity: 90%;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    width: 800px;
+    margin-left:-400px;
+    top: 33%;
+    left: 50%;
+}
+
+  h1 {
+      font-size: 2rem;
+      letter-spacing: 0.5em;
+      margin-bottom: 5%;
+  }
+
+  h2 {
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+  }
+
+  a {
+      color: white;
+  }
+
+footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 800px;
+    margin-left: -400px;
+    left: 50%;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1%;
+}
+  
