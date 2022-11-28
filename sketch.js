@@ -2,7 +2,7 @@ let t;
 let increment = 0.001; 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, 900);
   strokeWeight(2);
   stroke(255);
   noFill();
@@ -36,4 +36,8 @@ function makeCircle(xPos, yPos, circleSize) {
   ellipse(x, y, size, size);
 
   t += increment;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, 900);
 }
