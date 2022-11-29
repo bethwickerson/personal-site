@@ -29,10 +29,26 @@ html, body {
     left: 50%;
 }
 
+@keyframes bounce {
+  0%, 25%, 55%, 75%, 100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-30px);
+  }  
+  65% {
+      transform: translateY(-15px); 
+  }
+  85% {
+    transform: translateY(-5px); 
+  }
+}
+
 .arrow {
     position: relative;
-    top: 350px;
+    top: 200px;
     font-size: 3rem;
+    animation: bounce 4s ease-out infinite;
 }
 
 .gallery {
