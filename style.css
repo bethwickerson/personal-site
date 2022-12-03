@@ -163,12 +163,20 @@ canvas {
   animation-delay: 1.5s;
 }
 
+.video-container .video-description {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  margin-top: 1000px;
+  text-align: left;
+}
 
 .plyr--video {
   width: auto;
   height: auto;
   max-height: 100%;
   max-width: 100%;
+  --plyr-video-background: rgba(0,0,0,0);
+  --plyr-color-main: rgba(139, 102, 240, 0.5);
 }
 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {

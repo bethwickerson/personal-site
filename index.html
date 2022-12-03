@@ -30,31 +30,52 @@
     <div class="gallery">
       <div class="video-container">
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775340965"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775340965" 
+          id="player0" controls data-plyr-config='{ "title": "Glamour x Willow Cover, Tikok Effect House" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775356208"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775356208"
+          id="player1" controls data-plyr-config='{ "title": "Garden Museum World Installation, Meta Spark" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775359980"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775359980"
+          id="player2" controls data-plyr-config='{ "title": "Metal Nails Finger Tracking, Snapchat Lens Studio" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775346908"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775361868"
+          id="player3" controls data-plyr-config='{ "title": "Dream Pod Raymarching Audio Reactive Shader, Meta Spark" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775361868"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="777518332"
+          id="player4" controls data-plyr-config='{ "title": "Maybelline Mascara Game, Meta Spark" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775364856"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775346908"
+          id="player5" controls data-plyr-config='{ "title": "Creators Week Wearable, Meta Spark" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775343889"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775356092"
+          id="player6" controls data-plyr-config='{ "title": "Identity 2.0 Exhibition Activation, Meta Spark" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775356092"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775364856"
+          id="player7" controls data-plyr-config='{ "title": "Zodiac Soulmate Quiz, Challenge Winner, Tiktok Effect House" }'></div>
         </div>
         <div class="video">
-          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775363611"></div>
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775343889"
+          id="player8" controls data-plyr-config='{ "title": "Heads Up! Multiplayer Game, Meta Spark" }'></div>
+        </div>
+        <div class="video">
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775363611"
+          id="player9" controls data-plyr-config='{ "title": "Liquid Distortion Shader, Snapchat Lens Studio" }'></div>
+        </div>
+        <div class="video">
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775357990"
+          id="player10" controls data-plyr-config='{ "title": "Break Free to Fly Narrative, Meta Spark" }'></div>
+        </div>
+        <div class="video">
+          <div class="plyr__video-embed js-player" data-plyr-provider="vimeo" data-plyr-embed-id="775364444"
+          id="player11" controls data-plyr-config='{ "title": "Swiftie Body Tracking, Tiktok Effect House" }'></div>
         </div>
       </div>
     </div>
@@ -65,7 +86,15 @@
     <script src="sketch.js"></script>
     <script src="https://cdn.plyr.io/3.7.3/plyr.polyfilled.js"></script>
     <script>
-      const players = Plyr.setup('.js-player');
+      //const players = Plyr.setup('.js-player');
+      for(let i=0; i<12; i++) {
+        const player = new Plyr(`#player${i}`, {
+        title: 'Demo',
+        resetOnEnd: true,
+        loop: {active: true},
+        
+      });
+      }
     </script>
   </body>
 </html>
